@@ -1,0 +1,254 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color:#ffc107;
+    --first-font-weight:500;
+    --second-font-weight:600;
+    --last-font-weight:800;
+    --main-font-size:40px;
+}
+
+/*===========================Navbar=============================*/
+.Logo{
+    width: 100px ;
+}
+.Fw-Navbar{
+    font-weight: var(--first-font-weight) !important;
+}
+.navbar-light .navbar-toggler {
+    border-color: unset;
+}
+.navbar-toggler:focus {
+    box-shadow: unset;
+}
+
+.navbar ul li:hover a{
+    color: var(--main-color) !important;
+} 
+    
+
+@media screen and (max-width:992px) {
+    .navbar{
+        background-color: rgba(248, 249, 250, 1) !important;
+    }
+}
+
+.bg-tomato{
+    background-color: tomato;
+}
+/*===========================Loading=============================*/
+.loading .text h4{
+    font-size: var(--main-font-size);
+    font-weight: var(--last-font-weight);
+}
+.loading .text p{
+    font-weight: var(--first-font-weight);
+}
+.loading .text button {
+    font-weight: var(--second-font-weight);
+}
+.loading .img img{
+    height: 400px;
+}
+/*===========================Work=============================*/
+.work h4{
+    font-size: var(--main-font-size);
+    font-weight: var(--last-font-weight);
+}
+.work button{
+    font-weight: var(--second-font-weight);
+}
+.nav-link {
+    padding: 0.4rem 1rem;
+    color: black;
+    font-weight: var(--first-font-weight);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--main-color);
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: black;
+    background-color: var(--main-color);
+}
+@media screen and (min-width:768px) {
+    .BigImage{
+    height: 450px;
+}
+.SmallImage{
+    height: 250px;
+}
+}
+/*=====Layer=====*/   
+.fw-layer{
+    font-weight: var(--second-font-weight);
+}
+.layer-contianer{
+    cursor: pointer;
+}
+.layer{
+    background-color:rgba(255 235 59 / 69%);
+    position: absolute;
+    top: 150%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.layer-contianer:hover .layer{
+    top: 0;
+}
+.layer2{
+    background-color:rgba(255 235 59 / 69%);
+    position: absolute;
+    top: 0;
+    left: 150%;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.layer-contianer:hover .layer2{
+    left: 0;
+}
+.layer3{
+    background-color:rgba(255 235 59 / 69%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 150%;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.layer-contianer:hover .layer3{
+    bottom: 0;
+}
+.layer4{
+    background-color:rgba(255 235 59 / 69%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 150%;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.layer-contianer:hover .layer4{
+    right: 0;
+}
+/*===========================About Us===============================*/
+.aboutus h2{
+    font-size: var(--main-font-size);
+    font-weight: var(--last-font-weight);
+}
+.aboutus p{
+    font-weight: var(--first-font-weight);
+}
+.readmelink:hover{
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+/*==========================Blog===============================*/
+.blog h2{
+    font-size: var(--main-font-size);
+    font-weight: var(--last-font-weight);
+}
+.blog p{
+    font-weight: var(--first-font-weight);
+}
+.blog-img{
+    height: 250px;
+    background-image: url(../images/blog1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.blog-img2{
+    height: 250px;
+    background-image: url(../images/blog2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.blog-img3{
+    height: 250px;
+    background-image: url(../images/blog3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+/*=====Layer=====*/
+.layer5{
+    background-color:rgba(255 235 59 / 69%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 150%;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.blog-img:hover .layer5{
+    bottom: 0;
+}
+.blog-img2:hover .layer5{
+    bottom: 0;
+}
+.blog-img3:hover .layer5{
+    bottom: 0;
+}
+/*==========================Client feedback===============================*/
+.feedbackContainer h2{
+    font-size: var(--main-font-size);
+    font-weight: var(--last-font-weight);
+}
+.clientFeedback{
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+}
+.clientFeedback .overlay{
+    background-color: rgba(255, 193, 7 , 0.7);
+}
+.clientFeedback .img img{
+    width: 120px;
+    height: 120px;
+}
+.clientFeedback .info{
+    max-width: 500px;
+    margin: auto;
+}
+.clientFeedback .info p{
+    font-weight: var(--first-font-weight);
+}
+.carousel-indicators [data-bs-target] {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+/*==========================Contact Us===============================*/
+.contact h2{
+    font-size: var(--main-font-size);
+    font-weight: var(--last-font-weight);
+}
+.contact p{
+    font-weight: var(--first-font-weight);
+}
+.contact-content button{
+    font-weight: var(--second-font-weight);
+}
+.contact-info p{
+    font-weight: var(--second-font-weight);
+}
+/*==============================Footer=================================*/
+.footer .arrow-top{
+    cursor: pointer;
+}
